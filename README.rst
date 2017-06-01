@@ -1,8 +1,3 @@
-Home
-========
+TEC Client Platform API Documents
 
-Features
---------
-
-- Create Order
-- Get Order Status
+Edit ./docs to update documents
