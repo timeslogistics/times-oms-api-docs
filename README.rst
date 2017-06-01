@@ -1,4 +1,4 @@
-TEC Client Platform API
+Home
 ========
 
 Features
