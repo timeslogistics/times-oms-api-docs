@@ -1,11 +1,8 @@
-========
 Order
 ========
 
-# Order API [/order]
-
-## Create order [POST /order]
-
+Create order [POST /order]
+--------------------------
 
 + Parameters
     + trackingNumber: (string, required) - 
@@ -67,7 +64,9 @@ Order
                 "message": "Missing parameter"
             }
 
-## Get order [GET /order/{trackingNumber}]
+
+Get order [GET /order/{trackingNumber}]
+---------------------------------------
 
 
 + Parameters
