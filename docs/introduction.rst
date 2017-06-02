@@ -31,12 +31,17 @@ Common Status Code::
     412 - Precondition Failed / Invalid parameter, check response message for reason
     428 - Precondition Required / Missing parameter, check response message for reason
 
-* For detailed status code explanations, please refer to: http://www.restapitutorial.com/httpstatuscodes.html
+* For detailed status code explanations, please refer to http://www.restapitutorial.com/httpstatuscodes.html
 
 Client Implementation
 ---------------------
+The API is language independent.
+
+While this document provides PHP and Java sample code.
+
 Any client/library that can correctly handle `Authorization` HTTP header and HTTP verbs can be used.
 
-Recommanded Libraries::
+Recommended Libraries:
 
-    PHP - Guzzle
+* PHP: Guzzle - http://guzzlephp.org/
+* Java: Okhttp - http://square.github.io/okhttp/

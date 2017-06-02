@@ -4,28 +4,26 @@ Authenticatation
 Specification
 -------------
 
-As an REST API, there are not any session state stored on the server side.
+As a REST API, no any session state is stored on the server side.
 
 A "Token" must be supplied in every request in HTTP request header.
 
 Obtaining API Token
 -------------------
 
-The API token can be obtained in TEC Client Platform,
-
-or provide by IT department of Times E-commerce.
+The API token can be obtained in TEC Client Platform, or provide by IT department of Times E-commerce.
 
 Resetting API Token
 -------------------
 
-If you believe your API token is leaked, you can request an reset of token in TEC Client Platform.
+If you believe that your API token is leaked, you can request token reset in TEC Client Platform.
 
 After reset, a new token will be issued and the old token is intermediately invalidated.
 
 Token Lifetime
 --------------
 
-The token never expire unless being reset.
+Token never expire unless being reset.
 
 Example
 -------
