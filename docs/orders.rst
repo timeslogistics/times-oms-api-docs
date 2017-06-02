@@ -74,10 +74,6 @@ Body::
 Get order [GET /orders/{trackingNumber}]
 ----------------------------------------
 
-
-+ Parameters
-    + trackingNumber: (string, required) - Tracking Number
-
 + Response 200 (application/json)
 
 .. code-block:: json
