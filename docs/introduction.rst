@@ -12,11 +12,11 @@ All operations use standard HTTP verbs (GET, POST, PATCH, PUT, DELETE) and all r
 
 Example verbs::
 
-    GET /order/MTK00000001            # Get Order Detail
-    POST /order                       # Create an Order
-    PUT /order/MTK00000001            # Replace an Order
-    PATCH /order/MTK00000001          # Update an Order
-    DELETE /order/MTK00000001         # Delete an Order
+    GET /orders/MTK00000001            # Get Order Detail
+    POST /orders                       # Create an Order
+    PUT /orders/MTK00000001            # Replace an Order
+    PATCH /orders/MTK00000001          # Update an Order
+    DELETE /orders/MTK00000001         # Delete an Order
 
 * For example only, not all API are implemented
 

@@ -25,11 +25,10 @@ Token Lifetime
 
 Token never expire unless being reset.
 
-Example
--------
+Example Token Usage
+-------------------
 
 Bare Minimal HTTP Request::
 
-    GET /api/order/MTK00000001 HTTP/1.1
-    Host: client-platform.indzz.net
+    GET /api/order/MTK00000001 HTTP/1.0
     Authorization: Bearer piAOLkaYYBdscIv5YxsrYuiuFH7vwC231YlJ4kivW43iFJMp59blGLJGysKc
