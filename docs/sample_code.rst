@@ -68,7 +68,7 @@ PHP:
 
 Java:
 
-.. code-block::java
+.. code-block:: java
 
   import okhttp3.*;
 
@@ -166,7 +166,7 @@ Get order [GET /orders/{trackingNumber}]
 
 Java:
 
-.. code-block::java
+.. code-block:: java
 
   import okhttp3.*;
 
