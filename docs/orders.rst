@@ -31,33 +31,40 @@ Create order [POST /orders/{trackingNumber}]
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
 
 + Request (application/x-www-form-urlencoded)
-    + Body
 
-            consigneeCompanyName=foo&... (HTTP POST variables)
+Body::
+
+          consigneeCompanyName=foo&... (HTTP POST variables)
+
 
 + Response 201 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "message": "Success"
             }
 
+
 + Response 409 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "message": "Order already exist"
             }
 
 + Response 412 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "message": "Invalid parameter"
             }
 
 + Response 428 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "message": "Missing parameter"
@@ -72,7 +79,8 @@ Get order [GET /orders/{trackingNumber}]
     + trackingNumber: (string, required) - Tracking Number
 
 + Response 200 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "trackingNumber": "MTK00000001",
@@ -91,7 +99,8 @@ Get order [GET /orders/{trackingNumber}]
             }
 
 + Response 404 (application/json)
-    + Body
+
+.. code-block:: json
 
             {
                 "message": "Order not found"
