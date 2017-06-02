@@ -17,17 +17,18 @@ Create order [POST /orders/{trackingNumber}]
     + shipperAddress: (string, required) -
     + shipperCountry: (string, required) -
     + shipperPostalCode: (string, required) -
-    + parcelValue: (string, required) -
+    + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
-    + referenceNumber: (string, required) -
-    + sortCode: (string, optional) - Specify sort code manually, required if items.categoryId and categoryName are not specified
+    + referenceNumber: (string, optional) -
+    + instruction: (string, optional) - Possible values: [UNPACK], UNPACK indicates this parcel need to be unpacked to scan parcels inside
+    + sortCode: (string, optional) - Specify sort code manually, required if both items.categoryId and items.categoryName are not provided
     + items[]: (array, required) - Array of items
     + items[][categoryId]: (string, optional) - Required if sort code is not specified
     + items[][categoryName]: (string, optional) - Required if sort code is not specified
     + items[][description]: (string, required) -
-    + items[][pieces]: (string, required) -
-    + items[][unitPrice]: (string, required) -
+    + items[][pieces]: (integer, required) -
+    + items[][unitPrice]: (decimal, required) -
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
 
 + Request (application/x-www-form-urlencoded)

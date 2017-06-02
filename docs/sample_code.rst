@@ -1,6 +1,10 @@
 Sample Code
 ===========
 
+Sample code below are for reference only.
+
+Please refer to coresponding API documents for latest field definations.
+
 Create order [POST /orders/{trackingNumber}]
 --------------------------------------------
 
@@ -31,12 +35,13 @@ PHP:
         'paymentMethod' => 'COD',
         'shipmentType' => 'CROSS-BORDER',
         'referenceNumber' => 'HAWB12345678',
+        'instruction' => '',
         'sortCode' => 'AB1234',
         'items[0][categoryId]' => '',
         'items[0][categoryName]' => '',
         'items[0][description]' => 'iPhone 7 32GB Black',
-        'items[0][pieces]' => '1',
-        'items[0][unitPrice]' => '5888',
+        'items[0][pieces]' => 1,
+        'items[0][unitPrice]' => 5888,
         'items[0][unitPriceCurrency]' => 'HKD',
     ];
 
