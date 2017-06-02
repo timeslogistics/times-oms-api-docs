@@ -22,10 +22,10 @@ Create order [POST /orders/{trackingNumber}]
     + shipmentType: (string, required) -
     + referenceNumber: (string, optional) -
     + instruction: (string, optional) - Possible values: [UNPACK], UNPACK indicates this parcel need to be unpacked to scan parcels inside
-    + sortCode: (string, optional) - Specify sort code manually, required if both items.categoryId and items.categoryName are not provided
+    + sortCode: (string, optional/required) - Specify sort code manually, required if both items.categoryId and items.categoryName are not provided
     + items[]: (array, required) - Array of items
-    + items[][categoryId]: (string, optional) - Required if sort code is not specified
-    + items[][categoryName]: (string, optional) - Required if sort code is not specified
+    + items[][categoryId]: (string, optional/required) - Required if sort code is not specified
+    + items[][categoryName]: (string, optional/required) - Required if sort code is not specified
     + items[][description]: (string, required) -
     + items[][pieces]: (integer, required) -
     + items[][unitPrice]: (decimal, required) -
