@@ -1,40 +1,39 @@
-Order
-=====
+Orders API
+==========
 
-Create order [POST /order]
+Create order [POST /orders/{trackingNumber}]
 --------------------------
 
 + Parameters
-    + trackingNumber: (string, required) - 
-    + consigneeCompanyName: (string, required) - 
-    + consigneeContactName: (string, required) - 
-    + consigneePhone: (string, required) - 
-    + consigneeAddress: (string, required) - 
-    + consigneeCountry: (string, required) - 
-    + consigneePostalCode: (string, required) - 
-    + shipperCompanyName: (string, required) - 
-    + shipperContactName: (string, required) - 
-    + shipperPhone: (string, required) - 
-    + shipperAddress: (string, required) - 
-    + shipperCountry: (string, required) - 
-    + shipperPostalCode: (string, required) - 
-    + parcelValue: (string, required) - 
-    + paymentMethod: (string, required) - 
-    + shipmentType: (string, required) - 
-    + referenceNumber: (string, required) - 
+    + consigneeCompanyName: (string, required) -
+    + consigneeContactName: (string, required) -
+    + consigneePhone: (string, required) -
+    + consigneeAddress: (string, required) -
+    + consigneeCountry: (string, required) -
+    + consigneePostalCode: (string, required) -
+    + shipperCompanyName: (string, required) -
+    + shipperContactName: (string, required) -
+    + shipperPhone: (string, required) -
+    + shipperAddress: (string, required) -
+    + shipperCountry: (string, required) -
+    + shipperPostalCode: (string, required) -
+    + parcelValue: (string, required) -
+    + paymentMethod: (string, required) -
+    + shipmentType: (string, required) -
+    + referenceNumber: (string, required) -
     + sortCode: (string, optional) - Specify sort code manually, required if items.categoryId and categoryName are not specified
     + items[]: (array, required) - Array of items
     + items[][categoryId]: (string, optional) - Required if sort code is not specified
     + items[][categoryName]: (string, optional) - Required if sort code is not specified
-    + items[][description]: (string, required) - 
-    + items[][pieces]: (string, required) - 
-    + items[][unitPrice]: (string, required) - 
+    + items[][description]: (string, required) -
+    + items[][pieces]: (string, required) -
+    + items[][unitPrice]: (string, required) -
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
 
 + Request (application/x-www-form-urlencoded)
     + Body
 
-            trackingNumber=MTK00000001&consigneeCompanyName=foo&... (HTTP POST variables)
+            consigneeCompanyName=foo&... (HTTP POST variables)
 
 + Response 201 (application/json)
     + Body
@@ -65,8 +64,8 @@ Create order [POST /order]
             }
 
 
-Get order [GET /order/{trackingNumber}]
----------------------------------------
+Get order [GET /orders/{trackingNumber}]
+----------------------------------------
 
 
 + Parameters
