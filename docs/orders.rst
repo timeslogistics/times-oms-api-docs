@@ -1,8 +1,8 @@
-Orders API
-==========
+Orders API Endpoints
+====================
 
 Create order [POST /orders/{trackingNumber}]
---------------------------
+--------------------------------------------
 
 + Parameters
     + consigneeCompanyName: (string, required) -

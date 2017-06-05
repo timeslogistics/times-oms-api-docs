@@ -33,6 +33,8 @@ Common Status Code::
 
 * For detailed status code explanations, please refer to http://www.restapitutorial.com/httpstatuscodes.html
 
+* All Key words ("MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL") in this document follows RFC2119 recommandations (https://tools.ietf.org/html/rfc2119).
+
 Client Implementation
 ---------------------
 The API is language independent.
@@ -41,7 +43,7 @@ While this document provides PHP and Java sample code.
 
 Any client/library that can correctly handle `Authorization` HTTP header and HTTP verbs can be used.
 
-Recommended Libraries:
+Libraries used in sample code:
 
 * PHP: Guzzle - http://guzzlephp.org/
 * Java: Okhttp - http://square.github.io/okhttp/

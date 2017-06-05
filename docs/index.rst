@@ -6,13 +6,21 @@ TEC Client Platform API Documentations
    :caption: Get Started
 
    introduction
-   authentication
+   api_endpoints_and_webhooks
 
 .. toctree::
    :maxdepth: 2
    :caption: API Endpoints
 
+   authentication
    orders
+
+.. toctree::
+  :maxdepth: 2
+  :caption: API Webhooks
+
+  validation
+  status_update
 
 .. toctree::
    :maxdepth: 2

@@ -6,7 +6,7 @@ Specification
 
 As a REST API, no any session state is stored on the server side.
 
-A "Token" must be supplied in every request in HTTP request header.
+A "Token" MUST be supplied in every request in HTTP request header.
 
 Obtaining API Token
 -------------------
