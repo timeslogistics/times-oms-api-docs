@@ -1,5 +1,5 @@
-Orders API Endpoints
-====================
+Orders
+======
 
 Create order [POST /orders/{trackingNumber}]
 --------------------------------------------
