@@ -19,7 +19,7 @@ TEC Client Platform API Documentations
   :maxdepth: 2
   :caption: API Webhooks
 
-  validation
+  verification
   status_update
 
 .. toctree::
@@ -27,4 +27,3 @@ TEC Client Platform API Documentations
    :caption: Get Help
 
    sample_code
-   support

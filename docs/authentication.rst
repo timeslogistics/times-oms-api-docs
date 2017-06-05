@@ -8,6 +8,8 @@ As a REST API, no any session state is stored on the server side.
 
 A "Token" MUST be supplied in every request in HTTP request header.
 
+Please note than "API Token" is different from "Webhook Secret" used in Webhooks.
+
 Obtaining API Token
 -------------------
 

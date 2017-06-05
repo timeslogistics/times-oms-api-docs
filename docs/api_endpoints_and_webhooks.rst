@@ -1,4 +1,4 @@
-API Endpoints API Webhooks
+API Endpoints and API Webhooks
 ==========================
 
 API Endpoints
@@ -17,6 +17,6 @@ For example, an order status update and you want to know about it in real time.
 
 You MAY register a webhook url in our system, so we can make a HTTP POST requests to "push" data to your server.
 
-You SHOULD validate HTTP requests before doing any actions with the data received.
+You SHOULD verify the HTTP requests before performing any actions with the data received.
 
 While we support both HTTP/HTTPS urls for webhook, HTTPS is RECOMMENDED for better security.
