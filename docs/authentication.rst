@@ -20,7 +20,7 @@ Resetting API Token
 
 If you believe that your API token is leaked, you can request token reset in TEC Client Platform.
 
-After reset, a new token will be issued and the old token is intermediately invalidated.
+After reset, a new token will be issued and the old token is immediately invalidated.
 
 Token Lifetime
 --------------
