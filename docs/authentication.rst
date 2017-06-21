@@ -30,7 +30,7 @@ Token never expire unless being reset.
 Example Token Usage
 -------------------
 
-Bare Minimal HTTP Request::
+Bare Minimal HTTP Request for API Token piAOLkaYYBdscIv5YxsrYuiuFH7vwC231YlJ4kivW43iFJMp59blGLJGysKc::
 
     GET /api/orders/MTK00000001 HTTP/1.1
     Authorization: Bearer piAOLkaYYBdscIv5YxsrYuiuFH7vwC231YlJ4kivW43iFJMp59blGLJGysKc
