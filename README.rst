@@ -1,3 +1,3 @@
-TEC Client Platform API Documents
+Times OMS API Documents
 
 Edit ./docs to update documents
