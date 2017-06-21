@@ -33,15 +33,16 @@ PHP:
         'shipperPostalCode' => '000000',
         'parcelValue' => 5888,
         'paymentMethod' => 'COD',
-        'shipmentType' => 'CROSS-BORDER',
+        'productType' => 'Express',
+        'salePlatformName' => 'Taobao',
+        'shipmentType' => 'MONTHLY',
         'referenceNumber' => 'HAWB12345678',
-        'instruction' => '',
         'sortCode' => 'AB1234',
         'items[0][categoryId]' => '',
         'items[0][categoryName]' => '',
         'items[0][description]' => 'iPhone 7 32GB Black',
-        'items[0][pieces]' => 1,
-        'items[0][unitPrice]' => 5888,
+        'items[0][pieces]' => '1',
+        'items[0][unitPrice]' => '5888',
         'items[0][unitPriceCurrency]' => 'HKD',
     ];
 
@@ -50,7 +51,7 @@ PHP:
         'headers' => [
             'Authorization' => "Bearer {$api_token}"
         ],
-        'form_params' => $params
+        'json' => $params
     ]);
 
     $statusCode = $res->getStatusCode();
