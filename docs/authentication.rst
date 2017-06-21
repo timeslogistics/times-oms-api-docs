@@ -33,5 +33,4 @@ Example Token Usage
 Bare Minimal HTTP Request for API Token piAOLkaYYBdscIv5YxsrYuiuFH7vwC231YlJ4kivW43iFJMp59blGLJGysKc::
 
     GET /api/orders/MTK00000001 HTTP/1.1
-    Content-Type: application/json
     Authorization: Bearer piAOLkaYYBdscIv5YxsrYuiuFH7vwC231YlJ4kivW43iFJMp59blGLJGysKc
