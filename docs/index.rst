@@ -1,4 +1,4 @@
-TEC Client Platform API Documentations
+Times OMS API Documentations
 ======================================
 
 .. toctree::

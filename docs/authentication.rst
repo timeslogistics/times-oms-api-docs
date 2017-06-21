@@ -13,12 +13,12 @@ Please note than "API Token" is different from "Webhook Secret" used in Webhooks
 Obtaining API Token
 -------------------
 
-The API token can be obtained in TEC Client Platform, or provide by IT department of Times E-commerce.
+The API token can be obtained in Times OMS, or provide by IT department of Times E-commerce.
 
 Resetting API Token
 -------------------
 
-If you believe that your API token is leaked, you can request token reset in TEC Client Platform.
+If you believe that your API token is leaked, you can request token reset in Times OMS.
 
 After reset, a new token will be issued and the old token is intermediately invalidated.
 

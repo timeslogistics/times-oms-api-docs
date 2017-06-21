@@ -13,12 +13,12 @@ Please note than "Webhook Secret" is different from "API Token" used in Endpoint
 Obtaining Webhook Secret
 ------------------------
 
-The Webhook Secret can be obtained in TEC Client Platform, or provide by IT department of Times E-commerce.
+The Webhook Secret can be obtained in Times OMS, or provide by IT department of Times E-commerce.
 
 Resetting Webhook Secret
 ------------------------
 
-If you believe that your Webhook Secret is leaked, you can request a reset in TEC Client Platform.
+If you believe that your Webhook Secret is leaked, you can request a reset in Times OMS.
 
 After reset, a new Webhook Secret will be issued and the old Webhook Secret is intermediately invalidated.
 

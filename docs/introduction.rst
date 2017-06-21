@@ -4,7 +4,7 @@ Introduction
 Specification
 -------------
 
-TEC Client API implements REST API interface.
+Times OMS API implements REST API interface.
 
 All endpoints accept HTTP POST variables as input, and JSON as output.
 

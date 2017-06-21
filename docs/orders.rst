@@ -9,17 +9,18 @@ Create order [POST /orders/{trackingNumber}]
     + consigneeContactName: (string, required) -
     + consigneePhone: (string, required) -
     + consigneeAddress: (string, required) -
-    + consigneeCountry: (string, required) -
+    + consigneeCountry: (string, required) - 
     + consigneePostalCode: (string, required) -
     + shipperCompanyName: (string, required) -
     + shipperContactName: (string, required) -
     + shipperPhone: (string, required) -
     + shipperAddress: (string, required) -
-    + shipperCountry: (string, required) -
+    + shipperCountry: (string, required) - 
     + shipperPostalCode: (string, required) -
     + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
+    + containBattery: (boolean, required) - Possible values: [1/0]
     + referenceNumber: (string, optional) -
     + instruction: (string, optional) - Possible values: [UNPACK], UNPACK indicates this parcel need to be unpacked to scan parcels inside
     + sortCode: (string, optional/required) - Specify sort code manually, required if both items.categoryId and items.categoryName are not provided
