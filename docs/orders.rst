@@ -35,6 +35,7 @@ Create order [POST /orders/{trackingNumber}]
     + items[][pieces]: (integer, required) -
     + items[][unitPrice]: (decimal, required) -
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
+    + items[][codValue]: (decimal, optional/required) - Single SKU COD value (pieces * cod unit price), required if paymentMethod = COD
 
 + Request (application/json)
 
