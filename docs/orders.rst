@@ -23,7 +23,6 @@ Create order (Without lastmile delivery tracking number) [POST /orders]
     + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
-    + containBattery: (boolean, required) - Possible values: [1/0]
     + referenceNumber: (string, optional) -
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
@@ -59,7 +58,6 @@ Create order (Already have lastmile delivery tracking number) [POST /orders/{tra
     + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
-    + containBattery: (boolean, required) - Possible values: [1/0]
     + referenceNumber: (string, optional) -
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
