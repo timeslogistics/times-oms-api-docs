@@ -151,7 +151,7 @@ Java:
 Get order [GET /orders/{trackingNumber}]
 ----------------------------------------
 
-  PHP:
+PHP:
 
 .. code-block:: php
 
