@@ -11,6 +11,7 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + consigneePhone: (string, required) -
     + consigneeAddress: (string, required) -
     + consigneeCountry: (string, required) -
+    + consigneeDistrict: (string, required) -
     + consigneeCompanyNameLocale: (string, optional/required) - Required for TH/PH
     + consigneeContactNameLocale: (string, optional/required) - Required for TH/PH
     + consigneeAddressLocale: (string, optional/required) - Required for TH/PH
@@ -47,6 +48,7 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + consigneePhone: (string, required) -
     + consigneeAddress: (string, required) -
     + consigneeCountry: (string, required) -
+    + consigneeDistrict: (string, required) -
     + consigneeCompanyNameLocale: (string, optional/required) - Required for TH/PH
     + consigneeContactNameLocale: (string, optional/required) - Required for TH/PH
     + consigneeAddressLocale: (string, optional/required) - Required for TH/PH
