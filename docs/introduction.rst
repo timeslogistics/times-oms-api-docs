@@ -33,7 +33,7 @@ Common Status Code::
 
 * For detailed status code explanations, please refer to http://www.restapitutorial.com/httpstatuscodes.html
 
-* All Key words ("MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL") in this document follows RFC2119 recommandations (https://tools.ietf.org/html/rfc2119).
+* All Key words ("MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL") in this document follows RFC2119 recommendations (https://tools.ietf.org/html/rfc2119).
 
 Client Implementation
 ---------------------
