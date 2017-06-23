@@ -4,7 +4,7 @@ API Endpoints and API Webhooks
 API Endpoints
 -------------
 
-API Endpoins are used from your server to Times servers and can be used to Search, Create, Update or Delete data.
+API Endpoints are used from your server to Times servers and can be used to Search, Create, Update or Delete data.
 
 Authentication MUST be provided to invoke API Endpoint calls.
 
