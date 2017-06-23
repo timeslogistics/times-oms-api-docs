@@ -3,6 +3,7 @@ Orders
 
 Create order (Without lastmile delivery tracking number) [POST /orders]
 --------------------------------------------
+Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
 
 + Parameters
     + consigneeCompanyName: (string, required) -
@@ -38,6 +39,7 @@ Create order (Without lastmile delivery tracking number) [POST /orders]
 
 Create order (Already have lastmile delivery tracking number) [POST /orders/{trackingNumber}]
 --------------------------------------------
+Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
 
 + Parameters
     + consigneeCompanyName: (string, required) -
