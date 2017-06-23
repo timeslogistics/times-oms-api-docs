@@ -25,7 +25,7 @@ Common Status Code::
     200 - Okay / Query success, please check the response
     201 - Created / Order created
     401 - Unauthorized / Token missing or invalid
-    403 - Forbidden / Operation not permited
+    403 - Forbidden / Operation not permitted
     404 - Not Found / Order is not found
     409 - Conflict / Order already exist
     412 - Precondition Failed / Invalid parameter, check response message for reason
