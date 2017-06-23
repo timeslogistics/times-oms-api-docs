@@ -19,35 +19,43 @@ PHP:
 
   try {
     $params = [
-        'consigneeCompanyName' => 'ABC Company',
-        'consigneeContactName' => 'Chris Wong',
-        'consigneePhone' => '1878200',
-        'consigneeAddress' => 'Room 123, Dummy Building, District, Kowloon',
-        'consigneeCountry' => 'Hong Kong',
-        'consigneePostalCode' => '00000',
+        'consigneeCompanyName' => 'Supachai Piamthong',
+        'consigneeContactName' => 'Supachai Piamthong',
+        'consigneePhone' => '123456789',
+        'consigneeAddress' => '12 34 Moo 8 Chom Bueng Ratchaburi Ratchaburi Chom Bueng 70150',
+        'consigneeCountry' => 'Thailand',
+        'consigneeDistrict' => 'Bangkok',
+        'consigneePostalCode' => '70150',
+        'consigneeCompanyNameLocale' => '\u0e28\u0e38\u0e20\u0e0a\u0e31\u0e22  \u0e40\u0e1b\u0e35\u0e48\u0e22\u0e21\u0e17\u0e2d\u0e07',
+        'consigneeContactNameLocale' => '\u0e28\u0e38\u0e20\u0e0a\u0e31\u0e22  \u0e40\u0e1b\u0e35\u0e48\u0e22\u0e21\u0e17\u0e2d\u0e07',
+        'consigneeAddressLocale' => '90 100 \u0e21 8 \u0e15 \u0e08\u0e2d\u0e21\u0e1a\u0e36\u0e07  \u0e23\u0e32\u0e0a\u0e1a\u0e38\u0e23\u0e35  Ratchaburi \u0e08\u0e2d\u0e21\u0e1a\u0e36\u0e07  Chom Bueng 70150',
         'shipperCompanyName' => 'Client Company Limited',
         'shipperContactName' => 'John Lee',
         'shipperPhone' => '21800000',
         'shipperAddress' => 'Room 88, Some Building, District, N.T.',
-        'shipperCountry' => 'Hong Kong',
+        'shipperCountry' => 'China',
         'shipperPostalCode' => '000000',
-        'parcelValue' => 5888,
         'paymentMethod' => 'COD',
+        'parcelValue' => 5888,
         'productType' => 'Express',
+        'shipmentType' => 'Mobile & Tablet',
         'salePlatformName' => 'Taobao',
-        'shipmentType' => 'MONTHLY',
         'referenceNumber' => 'HAWB12345678',
         'sortCode' => 'AB1234',
-        'items[0][categoryId]' => '',
-        'items[0][categoryName]' => '',
+        'items[0][sku]' => 'sku-test-1234567890',
+        'items[0][categoryId]' => 'ASQW987654',
+        'items[0][categoryName]' => 'Mobile Phone',
         'items[0][description]' => 'iPhone 7 32GB Black',
+        'items[0][brand]' => 'Apple',
+        'items[0][model]' => 'iphone 7',
         'items[0][pieces]' => '1',
-        'items[0][unitPrice]' => '5888',
-        'items[0][unitPriceCurrency]' => 'HKD',
+        'items[0][unitPrice]' => 5888,
+        'items[0][unitPriceCurrency]' => 'THB',
+        'items[0][CODValue]' => 5888,
     ];
 
     $client = new GuzzleHttp\Client();
-    $res = $client->request('POST', 'http://127.0.0.1:8010/api/order/MTK88888888', [
+    $res = $client->request('POST', 'http://127.0.0.1:8010/api/order', [
         'headers' => [
             'Authorization' => "Bearer {$api_token}"
         ],
