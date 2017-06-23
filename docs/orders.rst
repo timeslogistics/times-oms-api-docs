@@ -24,7 +24,7 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
-    + referenceNumber: (string, optional) -
+    + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
     + items[][categoryId]: (string, optional/required) - 
@@ -60,7 +60,7 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
     + shipmentType: (string, required) -
-    + referenceNumber: (string, optional) -
+    + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
     + items[][categoryId]: (string, optional/required) - 
