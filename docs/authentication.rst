@@ -1,4 +1,4 @@
-Authenticatation
+Authentication
 ================
 
 Specification
