@@ -3,7 +3,7 @@ Sample Code
 
 Sample code below are for reference only.
 
-Please refer to corresponding API documents for latest field definations.
+Please refer to corresponding API documents for latest field definitions.
 
 Create order [POST /orders/{trackingNumber}]
 --------------------------------------------
