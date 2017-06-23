@@ -75,7 +75,7 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
 
 + Request (application/json)
 
-Body (Example)::
+Body (Example)
 .. code-block:: json
       {
         "consigneeCompanyName":"Supachai Piamthong",
