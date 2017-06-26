@@ -1,8 +1,11 @@
 Orders
-======
+========
+
+Create order
+--------------
 
 Create order (Without lastmile delivery tracking number) [POST /orders]
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
 
 + Parameters
@@ -22,10 +25,11 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + shipperAddress: (string, required) -
     + shipperCountry: (string, required) -
     + shipperPostalCode: (string, required) -
-    + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
+    + parcelValue: (decimal, required) -
     + productType: (string, required) -
     + shipmentType: (string, required) -
+    + salePlatformName: (string, required) -
     + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
@@ -40,7 +44,7 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + items[][CODValue]: (decimal, optional/required) - Single SKU COD value (pieces * cod unit price), required if paymentMethod = COD
 
 Create order (Already have lastmile delivery tracking number) [POST /orders/{trackingNumber}]
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
 
 + Parameters
@@ -64,6 +68,7 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + paymentMethod: (string, required) -
     + productType: (string, required) -
     + shipmentType: (string, required) -
+    + salePlatformName: (string, required) -
     + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
     + items[][sku]: (string, optional) -
@@ -77,9 +82,13 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
     + items[][CODValue]: (decimal, optional/required) - Single SKU COD value (pieces * cod unit price), required if paymentMethod = COD
 
-+ Request (application/json)
+Request (application/json)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Body (Example)::
+Body (Example)
+"""""""""""""""""
+
+.. code-block:: json
 
       {
         "consigneeCompanyName":"Supachai Piamthong",
@@ -133,7 +142,8 @@ Body (Example)::
       }
 
 
-+ Response 201 (application/json)
+Response 201 (application/json)
+""""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
@@ -142,7 +152,8 @@ Body (Example)::
             }
 
 
-+ Response 409 (application/json)
+Response 409 (application/json)
+""""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
@@ -150,7 +161,8 @@ Body (Example)::
                 "message": "Order already exist"
             }
 
-+ Response 412 (application/json)
+Response 412 (application/json)
+""""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
@@ -158,7 +170,8 @@ Body (Example)::
                 "message": "Invalid parameter"
             }
 
-+ Response 428 (application/json)
+Response 428 (application/json)
+""""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
@@ -167,10 +180,14 @@ Body (Example)::
             }
 
 
-Get order [GET /orders/{trackingNumber}]
-----------------------------------------
+Get order
+-----------
 
-+ Response 200 (application/json)
+Get order [GET /orders/{trackingNumber}]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Response 200 (application/json)
+""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
@@ -190,7 +207,8 @@ Get order [GET /orders/{trackingNumber}]
                 }
             }
 
-+ Response 404 (application/json)
+Response 404 (application/json)
+""""""""""""""""""""""""""""""""""
 
 .. code-block:: json
 
