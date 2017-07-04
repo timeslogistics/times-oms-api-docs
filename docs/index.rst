@@ -3,6 +3,12 @@ Times OMS API Documentations
 
 .. toctree::
    :maxdepth: 2
+   :caption: History
+
+   history
+   
+.. toctree::
+   :maxdepth: 2
    :caption: Get Started
 
    introduction
