@@ -11,7 +11,11 @@ Order Status Update
     + inbound: (datetime, maybe empty)
     + outbound: (datetime, maybe empty)
     + handover_linehaul: (datetime, maybe empty)
+    + delivering: (datetime, maybe empty)
+    + pending: (datetime, maybe empty)
+    + pending_reason: (string, maybe empty)
     + reject: (datetime, maybe empty)
+    + reject_reason: (string, maybe empty)
     + return: (datetime, maybe empty)
     + receive: (datetime, maybe empty)
 
