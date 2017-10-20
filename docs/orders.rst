@@ -220,7 +220,14 @@ Response 200 (application/json)
                     "export": null,
                     "uplift": null,
                     "import": null,
-                    "handover_lastmile": null
+                    "handover_lastmile": null,
+                    "delivering": null,
+                    "pending": null,
+                    "pending_reason": null,
+                    "reject": null,
+                    "reject_reason": null,
+                    "return": null,
+                    "receive": null
                 }
             }
 
