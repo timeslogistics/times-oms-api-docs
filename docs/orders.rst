@@ -9,17 +9,18 @@ Create order (Without lastmile delivery tracking number) [POST /orders]
 Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
 
 + Parameters
-    + consigneeCompanyName: (string, required) -
-    + consigneeContactName: (string, required) -
+    + consigneeCompanyName: (string, optional) -
+    + consigneeContactName: (string, optional) -
     + consigneePhone: (string, required) -
-    + consigneeAddress: (string, required) -
+    + consigneeAddress: (string, optional) -
     + consigneeSubdistrict: (string, required) -
     + consigneeDistrict: (string, required) -
     + consigneeProvince: (string, required) -
-    + consigneeCountry: (string, required) -
-    + consigneeCompanyNameLocale: (string, optional/required) - Required for TH/PH
-    + consigneeContactNameLocale: (string, optional/required) - Required for TH/PH
-    + consigneeAddressLocale: (string, optional/required) - Required for TH/PH
+    + consigneeCountry: (string, required) - Full name of Consignee Country in English (Thailand, Taiwan, etc)
+    + consigneeCompanyNameLocale: (string, optional) - In Destination official language
+    + consigneeContactNameLocale: (string, required) - In Destination official language
+    + consigneeIdCardNumber: (string, optional/required) - Consignee ID card number. 如目的地为中国台湾, 总货价大或等於3000当地货币必须
+    + consigneeAddressLocale: (string, required) - In Destination official language
     + consigneePostalCode: (string, required) -
     + shipperCompanyName: (string, required) -
     + shipperContactName: (string, required) -
@@ -32,12 +33,12 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + shipperPostalCode: (string, required) -
     + paymentMethod: (string, required) -
     + parcelValue: (decimal, required) -
-    + productType: (string, required) -
-    + shipmentType: (string, required) -
+    + productType: (string, optional) -
+    + shipmentType: (string, optional) -
     + salePlatformName: (string, required) -
     + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
-    + items[][sku]: (string, optional) -
+    + items[][sku]: (string, required) -
     + items[][categoryId]: (string, optional/required) - 
     + items[][categoryName]: (string, optional/required) - 
     + items[][description]: (string, required) -
@@ -53,17 +54,18 @@ Create order (Already have lastmile delivery tracking number) [POST /orders/{tra
 Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
 
 + Parameters
-    + consigneeCompanyName: (string, required) -
-    + consigneeContactName: (string, required) -
+    + consigneeCompanyName: (string, optional) -
+    + consigneeContactName: (string, optional) -
     + consigneePhone: (string, required) -
-    + consigneeAddress: (string, required) -
+    + consigneeAddress: (string, optional) -
     + consigneeSubdistrict: (string, required) -
     + consigneeDistrict: (string, required) -
     + consigneeProvince: (string, required) -
-    + consigneeCountry: (string, required) -
-    + consigneeCompanyNameLocale: (string, optional/required) - Required for TH/PH
-    + consigneeContactNameLocale: (string, optional/required) - Required for TH/PH
-    + consigneeAddressLocale: (string, optional/required) - Required for TH/PH
+    + consigneeCountry: (string, required) - Full name of Consignee Country in English (Thailand, Taiwan, etc)
+    + consigneeCompanyNameLocale: (string, optional) - In Destination official language
+    + consigneeContactNameLocale: (string, required) - In Destination official language
+    + consigneeIdCardNumber: (string, optional/required) - Consignee ID card number. 如目的地为中国台湾, 总货价大或等於3000当地货币必须
+    + consigneeAddressLocale: (string, required) - In Destination official language
     + consigneePostalCode: (string, required) -
     + shipperCompanyName: (string, required) -
     + shipperContactName: (string, required) -
@@ -74,14 +76,14 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + shipperProvince: (string, required) -
     + shipperCountry: (string, required) -
     + shipperPostalCode: (string, required) -
-    + parcelValue: (decimal, required) -
     + paymentMethod: (string, required) -
-    + productType: (string, required) -
-    + shipmentType: (string, required) -
-    + salePlatformName: (string, required) -
+    + parcelValue: (decimal, required) -
+    + productType: (string, optional) -
+    + shipmentType: (string, optional) -
+    + salePlatformName: (string, required) -
     + referenceNumber: (string, required) - Unique per parcel
     + items[]: (array, required) - Array of items
-    + items[][sku]: (string, optional) -
+    + items[][sku]: (string, required) -
     + items[][categoryId]: (string, optional/required) - 
     + items[][categoryName]: (string, optional/required) - 
     + items[][description]: (string, required) -
