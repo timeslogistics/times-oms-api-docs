@@ -197,8 +197,12 @@ Response 412 (application/json)
 .. code-block:: json
 
             {
-                "message": "Invalid parameter",
-                "status_code": 412
+                "message": "Order already exist or invalid parameters",
+                "status_code": 412,
+                "remarks": {
+                    "trackingNumber": "TN123456789",
+                    "sortCode": "SC1234"
+                }
             }
 
 Response 428 (application/json)
