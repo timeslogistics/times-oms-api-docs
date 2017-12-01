@@ -42,6 +42,9 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + items[][categoryId]: (string, optional/required) - 
     + items[][categoryName]: (string, optional/required) - 
     + items[][description]: (string, required) -
+    + items[][specification]: (string, optional) -
+    + items[][descriptionOriginal]: (string, optional) - Description in Origin offical language
+    + items[][specificationOriginal]: (string, optional) - Specification in Origin official language
     + items[][brand]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
     + items[][model]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
     + items[][pieces]: (integer, required) -
@@ -87,6 +90,9 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + items[][categoryId]: (string, optional/required) - 
     + items[][categoryName]: (string, optional/required) - 
     + items[][description]: (string, required) -
+    + items[][specification]: (string, optional) -
+    + items[][descriptionOriginal]: (string, optional) - Description in Origin offical language
+    + items[][specificationOriginal]: (string, optional) - Specification in Origin official language
     + items[][brand]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
     + items[][model]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
     + items[][pieces]: (integer, required) -
@@ -165,7 +171,9 @@ Response 201 (application/json)
 .. code-block:: json
 
             {
-                "message": "Success"
+                "message": "Success",
+                "trackingNumber": "TN123456789",
+                "sortCode": "SC1234"
             }
 
 
@@ -175,7 +183,12 @@ Response 409 (application/json)
 .. code-block:: json
 
             {
-                "message": "Order already exist"
+                "message": "Order already exist",
+                "status_code": 409,
+                "remarks": {
+                    "trackingNumber": "TN123456789",
+                    "sortCode": "SC1234"
+                }
             }
 
 Response 412 (application/json)
@@ -184,7 +197,8 @@ Response 412 (application/json)
 .. code-block:: json
 
             {
-                "message": "Invalid parameter"
+                "message": "Invalid parameter",
+                "status_code": 412
             }
 
 Response 428 (application/json)
@@ -193,7 +207,8 @@ Response 428 (application/json)
 .. code-block:: json
 
             {
-                "message": "Missing parameter"
+                "message": "Missing parameter",
+                "status_code": 428
             }
 
 
@@ -237,5 +252,6 @@ Response 404 (application/json)
 .. code-block:: json
 
             {
-                "message": "Order not found"
+                "message": "Order not found",
+                "status_code": 404
             }
