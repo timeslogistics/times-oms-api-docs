@@ -32,7 +32,6 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + shipperCountry: (string, required) -
     + shipperPostalCode: (string, required) -
     + paymentMethod: (string, required) -
-    + parcelValue: (decimal, required) -
     + productType: (string, optional) -
     + shipmentType: (string, optional) -
     + salePlatformName: (string, required) -
@@ -47,10 +46,10 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + items[][specificationOriginal]: (string, optional) - Specification in Origin official language
     + items[][brand]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
     + items[][model]: (string, optional/required) - Required if shipmentType is "Mobile & Tablet"
-    + items[][pieces]: (integer, required) -
-    + items[][unitPrice]: (decimal, required) -
+    + items[][pieces]: (integer, required) - 
+    + items[][unitPrice]: (decimal, required) - Price per unit (DO NOT times pieces)
     + items[][unitPriceCurrency]: (string, required) - ISO 4217 Code
-    + items[][CODValue]: (decimal, optional/required) - Single SKU COD value (pieces * cod unit price), required if paymentMethod = COD
+    + items[][CODValue]: (decimal, optional/required) - Total COD value (pieces * cod unit price), required if paymentMethod = COD
 
 Create order (Already have lastmile delivery tracking number) [POST /orders/{trackingNumber}]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,7 +79,6 @@ Postman Collection: https://www.getpostman.com/collections/a6bd52c2c7d150c4dfc2
     + shipperCountry: (string, required) -
     + shipperPostalCode: (string, required) -
     + paymentMethod: (string, required) -
-    + parcelValue: (decimal, required) -
     + productType: (string, optional) -
     + shipmentType: (string, optional) -
     + salePlatformName: (string, required) -
@@ -131,7 +129,6 @@ Body (Example)
         "shipperCountry": "China",
         "shipperPostalCode": "000000",
         "paymentMethod": "COD",
-        "parcelValue": "1630",
         "productType": "Express",
         "shipmentType": "Mobile & Tablet",
         "salePlatformName": "Amazon",
