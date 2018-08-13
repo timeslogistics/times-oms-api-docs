@@ -272,6 +272,8 @@ Order found
 
             {
               "status": 0,
+              "shipper_country": "China",
+              "consignee_country": "Thailand",
               "results": [
                 {
                   "type": "Pending Time",
