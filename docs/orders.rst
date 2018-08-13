@@ -1,4 +1,4 @@
-bOrders
+Orders
 ========
 
 Create order
@@ -270,38 +270,39 @@ Order found
 
 .. code-block:: json
 
-{
-  "status": 0,
-  "results": [
-    {
-      "type": "Pending Time",
-      "timestamp": "2017-09-25 14:18:00",
-      "message": "Delivery unsuccessful, pending for action"
-    },
-    {
-      "type": "Close Box Time",
-      "timestamp": "2017-09-13 05:46:10",
-      "message": null
-    },
-    {
-      "type": "Sort Out Time",
-      "timestamp": "2017-09-13 05:45:43",
-      "message": null
-    },
-    {
-      "type": "Sort In Time",
-      "timestamp": "2017-09-13 01:48:59",
-      "message": null
-    },
-    {
-      "type": "Upload Time",
-      "timestamp": "2017-09-11 10:05:30",
-      "message": null
-    }
-  ]
-}
+            {
+              "status": 0,
+              "results": [
+                {
+                  "type": "Pending Time",
+                  "timestamp": "2017-09-25 14:18:00",
+                  "message": "Delivery unsuccessful, pending for action"
+                },
+                {
+                  "type": "Close Box Time",
+                  "timestamp": "2017-09-13 05:46:10",
+                  "message": null
+                },
+                {
+                  "type": "Sort Out Time",
+                  "timestamp": "2017-09-13 05:45:43",
+                  "message": null
+                },
+                {
+                  "type": "Sort In Time",
+                  "timestamp": "2017-09-13 01:48:59",
+                  "message": null
+                },
+                {
+                  "type": "Upload Time",
+                  "timestamp": "2017-09-11 10:05:30",
+                  "message": null
+                }
+              ]
+            }
 
 Order not found
 
 .. code-block:: json
-{"status":1,"message":"Order not found"}
+
+            {"status":1,"message":"Order not found"}
