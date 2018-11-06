@@ -20,6 +20,7 @@ Times OMS API Documentations
 
    authentication
    orders
+   inventories
 
 .. toctree::
   :maxdepth: 2
