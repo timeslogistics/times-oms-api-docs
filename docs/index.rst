@@ -19,6 +19,7 @@ Times OMS API Documentations
    :caption: API Endpoints
 
    authentication
+   asns
    orders
    inventories
 
