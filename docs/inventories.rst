@@ -18,8 +18,15 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + result: (string, required, 16) - "success" or "fail"
     + message: (string, required, 128) - Message about fail condition, eg. "warehouse_code not found", "client_code not found"
     + inventories[]: (array, required) - Array of contents
-    + inventories[][]
-    
+    + inventories[][client_code]: (string, required, 64) - Client Code
+    + inventories[][project_code]: (string, optional, 64) - Project code
+    + inventories[][warehouse_code]: (string, required, 64) - Warehouse code
+    + inventories[][sku]: (string, optional, 128) - SKU
+    + inventories[][quantity]: (int, required, 64) - Total in stock quantity, allocated + non allocated quantity
+    + inventories[][allocated_quantity]: (int, required, 64) - Allocated quantity
+    + inventories[][non_allocated_quantity]: (int, required, 64) - Non allocated quantity, called available quantity as well
+    + inventories[][uom]: (string, required, 64) - Unit of measure
+    + inventories[][expiry_date]: (string, required, 64) - Expiry date in "YYYY-mm-dd" format
     
     
 Request (application/json)
