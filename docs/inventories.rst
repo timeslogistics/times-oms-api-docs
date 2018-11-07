@@ -43,7 +43,7 @@ Response 200 (application/json)
     {
         "result": "success",
         "message": "success",
-        "inventories": {
+        "inventories": [
             {
                 "client_code": "101",
                 "warehouse_code": "1",
@@ -64,7 +64,7 @@ Response 200 (application/json)
                 "uom": "cartons",
                 "expiry_date": "2018-12-22"
             }
-        }
+        ]
     }
 
 Response 404 (application/json)
