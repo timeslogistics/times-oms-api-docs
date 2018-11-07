@@ -40,32 +40,32 @@ Response 200 (application/json)
 
 .. code-block:: json
 
+    {
+        "result": "success",
+        "message": "success",
+        "inventories": {
             {
-                "result": "success",
-                "message": "success",
-                "inventories": {
-                    {
-                        "client_code": "101",
-                        "warehouse_code": "1",
-                        "sku": "HGY-783612",
-                        "quantity": "150",
-                        "allocated_quantity": "30",
-                        "non_allocated_quantity": "120",
-                        "uom": "cartons",
-                        "expiry_date": "2018-10-22"
-                    },
-                    {
-                        "client_code": "101",
-                        "warehouse_code": "1",
-                        "sku": "HGY-783612",
-                        "quantity": "100",
-                        "allocated_quantity": "50",
-                        "non_allocated_quantity": "50",
-                        "uom": "cartons",
-                        "expiry_date": "2018-12-22"
-                    }
-                }
+                "client_code": "101",
+                "warehouse_code": "1",
+                "sku": "HGY-783612",
+                "quantity": "150",
+                "allocated_quantity": "30",
+                "non_allocated_quantity": "120",
+                "uom": "cartons",
+                "expiry_date": "2018-10-22"
+            },
+            {
+                "client_code": "101",
+                "warehouse_code": "1",
+                "sku": "HGY-783612",
+                "quantity": "100",
+                "allocated_quantity": "50",
+                "non_allocated_quantity": "50",
+                "uom": "cartons",
+                "expiry_date": "2018-12-22"
             }
+        }
+    }
 
 Response 404 (application/json)
 """"""""""""""""""""""""""""""""""
