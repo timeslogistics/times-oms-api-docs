@@ -9,7 +9,8 @@ Obtain inventory [GET /inventories]
 Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
 
 + Request Parameters
-    + client_code: (string, required, 64) - Client code of client(project) to be checked (provided by Times)
+    + client_code: (string, required, 64) - Client code of client to be checked (provided by Times)
+    + project_code: (string, optional, 64) - Project code of specific client to be checked (provided by Times)
     + warehouse_code: (string, required, 64) - Warehouse code (provided by Times)
     + sku: (string, optional, 128) - SKU
     
@@ -31,6 +32,7 @@ Body (Example)
 
             {
                 "client_code": "101",
+                "project_code": "1201",
                 "warehouse_code": "1",
                 "sku": "HGY-783612"
             }
@@ -46,6 +48,7 @@ Response 200 (application/json)
         "inventories": [
             {
                 "client_code": "101",
+                "project_code": "1201",
                 "warehouse_code": "1",
                 "sku": "HGY-783612",
                 "quantity": "150",
@@ -56,6 +59,7 @@ Response 200 (application/json)
             },
             {
                 "client_code": "101",
+                "project_code": "1201",
                 "warehouse_code": "1",
                 "sku": "HGY-783612",
                 "quantity": "100",
