@@ -44,7 +44,7 @@ Response 200 (application/json)
                 "result": "success",
                 "message": "success",
                 "inventories": {
-                    [
+                    {
                         "client_code": "101",
                         "warehouse_code": "1",
                         "sku": "HGY-783612",
@@ -53,8 +53,8 @@ Response 200 (application/json)
                         "non_allocated_quantity": "120",
                         "uom": "cartons",
                         "expiry_date": "2018-10-22"
-                    ],
-                    [
+                    },
+                    {
                         "client_code": "101",
                         "warehouse_code": "1",
                         "sku": "HGY-783612",
@@ -63,7 +63,7 @@ Response 200 (application/json)
                         "non_allocated_quantity": "50",
                         "uom": "cartons",
                         "expiry_date": "2018-12-22"
-                    ]
+                    }
                 }
             }
 
