@@ -21,7 +21,7 @@ Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
     + inventories[][client_code]: (string, required, 64) - Client Code
     + inventories[][project_code]: (string, optional, 64) - Project code
     + inventories[][warehouse_code]: (string, required, 64) - Warehouse code
-    + inventories[][sku]: (string, optional, 128) - SKU
+    + inventories[][sku]: (string, required, 128) - SKU
     + inventories[][quantity]: (int, required, 64) - Total in stock quantity, allocated + non allocated quantity
     + inventories[][allocated_quantity]: (int, required, 64) - Allocated quantity
     + inventories[][non_allocated_quantity]: (int, required, 64) - Non allocated quantity, called available quantity as well
