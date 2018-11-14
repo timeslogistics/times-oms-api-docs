@@ -1,4 +1,4 @@
-Orders
+Fullfilling Orders
 ========
 
 Create order
@@ -6,24 +6,23 @@ Create order
 
 Create order (Without lastmile delivery tracking number) [POST /orders]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
 
 + Parameters
-    + consigneeCompanyName: (string, optional) -
-    + consigneeContactName: (string, optional) -
-    + consigneePhone: (string, required) -
-    + consigneeAddress: (string, optional) -
-    + consigneeSubdistrict: (string, required) -
-    + consigneeDistrict: (string, required) -
-    + consigneeProvince: (string, required) -
-    + consigneeCountry: (string, required) - Full name of Consignee Country in English (Thailand, Taiwan, etc)
-    + consigneeCompanyNameLocale: (string, optional) - In Destination official language
-    + consigneeContactNameLocale: (string, required) - In Destination official language
-    + consigneeIdCardNumber: (string, optional/required) - Consignee ID card number. 如目的地为中国台湾, 总货价大或等於3000当地货币必须
-    + consigneeAddressLocale: (string, required) - In Destination official language
-    + consigneePostalCode: (string, required) -
-    + shipperCompanyName: (string, required) -
-    + shipperContactName: (string, required) -
+    + consignee_company_name: (string, optional) -
+    + consignee_contact_name: (string, optional) -
+    + consignee_phone: (string, required) -
+    + consignee_address: (string, optional) -
+    + consignee_subdistrict: (string, required) -
+    + consignee_district: (string, required) -
+    + consignee_province: (string, required) -
+    + consignee_country: (string, required) - Full name of Consignee Country in English (Thailand, Taiwan, etc)
+    + consignee_company_name_locale: (string, optional) - In Destination official language
+    + consignee_contact_name_locale: (string, required) - In Destination official language
+    + consignee_id_card_number: (string, optional/required) - Consignee ID card number. 如目的地为中国台湾, 总货价大或等於3000当地货币必须
+    + consignee_address_locale: (string, required) - In Destination official language
+    + consignee_postal_code: (string, required) -
+    + shipper_company_name: (string, required) -
+    + shipper_contact_name: (string, required) -
     + shipperPhone: (string, required) -
     + shipperAddress: (string, required) -
     + shipperSubdistrict: (string, required) -
