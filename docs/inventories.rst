@@ -6,7 +6,7 @@ Obtain inventories
 
 Obtain inventory [GET /inventories]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Postman Collections: https://www.getpostman.com/collections/3120f45724992dcc5913
+
 
 + Request Parameters
     + client_code: (string, required, 64) - Client code of client to be checked (provided by Times)
