@@ -21,7 +21,7 @@ Times OMS API Documentations
    authentication
    asns
    orders
-   fulfillment_orders
+   fulfilling_orders
    inventories
 
 .. toctree::
